@@ -1,0 +1,34 @@
+
+.card{
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.788);
+    height: 320px;
+    width: 300px;
+    border-radius: 1em;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 1em 0;
+}
+
+
+.Gamename{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.Rating{
+    text-align: center;
+}
+
+.image{
+    overflow: hidden;
+    margin: 1em 1em;
+}
+
+.text{
+    color: rgb(81, 172, 207);
+    font-size: 1.3em;
+
+}
