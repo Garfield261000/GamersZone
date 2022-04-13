@@ -14,15 +14,13 @@ function App() {
     const newfilter= Games.filter((value)=> {
         return value.Gamename.toLowerCase().includes(searchtxt.toLowerCase());
     });
-    console.log(newfilter)
+   
     if(searchtxt===""){
       setfiltereddata(Games)
     }
     else{
       setfiltereddata(newfilter);
     }
-    console.log(filtereddata)
-    
   }
   return (
     <>
