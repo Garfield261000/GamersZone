@@ -1,28 +1,9 @@
 
 body{
-  background-image: url(image1.jpg);
+  background-image: url(image2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
   
-}
-
-.contain{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 5vw;
-  margin: 2em 4em;
-}
-
-.search{
-  font-size: 150%;
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5em;
-
-}
-
-.searchbox{
-  border-radius: 1em;
 }
