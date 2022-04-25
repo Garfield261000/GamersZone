@@ -1,0 +1,16 @@
+.contain{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 3vw;
+    margin: 2em 4em;
+    padding: 4em 1em;
+  }
+
+  .modal-content{
+    background-image: url("https://images.unsplash.com/photo-1505506874110-6a7a69069a08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+  }
+

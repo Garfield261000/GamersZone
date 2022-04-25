@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import Gameinfo from './Gameinfo'
 import { Games } from './Games';
+import Sign_in_form from './Sign_in_form';
 
 export default function Navbar() {
     const [filtereddata, setfiltereddata] = useState(Games);
+    const[viewSignin,setviewSignin]=useState(false);
 
+ 
     const handlefilter = (event) => {
         const searchtxt = event.target.value
         const newfilter = Games.filter((value) => {
@@ -19,8 +22,14 @@ export default function Navbar() {
             setfiltereddata(newfilter);
             console.log(filtereddata)
 
-        }
+        } 
     }
+
+    const handleSignin= () =>{
+        setviewSignin(true)
+    }
+    
+    
     return (
         <>
             <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark border-bottom " >
@@ -30,14 +39,24 @@ export default function Navbar() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0"  >
+                        <ul className="navbar-nav mr-auto mb-2 mb-lg-0"  >
                             <li className="nav-item">
-                                <a className="navbar-brand fs-3" href="/">Home</a>
+                                <a className="navbar-brand fs-5" href="/">Latest Games</a>
                             </li>
                         </ul>
-                        <ul className="navbar-nav mb-2 mb-lg-0 mx-2"  >
+                        <ul className="navbar-nav mr-auto mb-2 mb-lg-0"  >
                             <li className="nav-item">
-                                <button className="btn btn-dark fs-5 rounded-pill" href="/">Login</button>
+                                <a className="navbar-brand fs-5" href="/">Blog</a>
+                            </li>
+                        </ul>
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0"  >
+                            <li className="nav-item">
+                                <a className="navbar-brand fs-5" href="/">Contact</a>
+                            </li>
+                        </ul>
+                        <ul className="navbar-nav mr-auto mb-2 mb-lg-0 mx-2"  >
+                            <li className="nav-item">
+                                <button className="btn btn-dark fs-5 rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={handleSignin} href="/">Sign in</button>
                             </li>
                         </ul>
                         <form className="d-flex">
@@ -47,6 +66,7 @@ export default function Navbar() {
                 </div>
             </nav>
             <Gameinfo filtereddata={filtereddata} />
+            {viewSignin && <Sign_in_form closeSignin={viewSignin}/>}
         </>
 
     )
