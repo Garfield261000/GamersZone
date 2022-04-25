@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Gameinfo from './Gameinfo'
 import { Games } from './Games';
-import Sign_in_form from './Sign_in_form';
+import Signinform from './Signinform';
 
 export default function Navbar() {
     const [filtereddata, setfiltereddata] = useState(Games);
@@ -66,7 +66,7 @@ export default function Navbar() {
                 </div>
             </nav>
             <Gameinfo filtereddata={filtereddata} />
-            {viewSignin && <Sign_in_form closeSignin={viewSignin}/>}
+            {viewSignin && <Signinform closeSignin={viewSignin}/>}
         </>
 
     )

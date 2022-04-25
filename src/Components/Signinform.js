@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Sign_in_form({ closeSignin }) {
+export default function Signinform({ closeSignin }) {
   return (
     <div className="modal fade " id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div className="modal-dialog modal-dialog-centered">
