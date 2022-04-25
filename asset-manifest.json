@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/GamersZone/static/css/main.1ece75df.css",
+    "main.css": "/GamersZone/static/css/main.a81dccda.css",
     "main.js": "/GamersZone/static/js/main.837d29a3.js",
     "static/js/787.c8c34d16.chunk.js": "/GamersZone/static/js/787.c8c34d16.chunk.js",
     "static/media/image2.jpg": "/GamersZone/static/media/image2.95e618c5506d31192d96.jpg",
     "index.html": "/GamersZone/index.html",
-    "main.1ece75df.css.map": "/GamersZone/static/css/main.1ece75df.css.map",
+    "main.a81dccda.css.map": "/GamersZone/static/css/main.a81dccda.css.map",
     "main.837d29a3.js.map": "/GamersZone/static/js/main.837d29a3.js.map",
     "787.c8c34d16.chunk.js.map": "/GamersZone/static/js/787.c8c34d16.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ece75df.css",
+    "static/css/main.a81dccda.css",
     "static/js/main.837d29a3.js"
   ]
 }
