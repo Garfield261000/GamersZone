@@ -16,19 +16,19 @@ export default function Home() {
         <div className="carousel-inner rounded">
           <div className="carousel-item active">
             <img src={img3} className="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-none d-md-block">
               <h2>Welcome to GamersZone</h2>
             </div>
           </div>
           <div className="carousel-item">
             <img src={img4} className="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-none d-md-block">
               <h2>Find Latest Games you are looking for</h2>
             </div>
           </div>
           <div className="carousel-item">
             <img src={img5} className="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-none d-md-block">
               <h2>The best place for Gamers to hang out</h2>
             </div>
           </div>

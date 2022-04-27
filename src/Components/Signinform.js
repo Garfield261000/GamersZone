@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Signinform() {
   return (
+    <>
     <div className="modal fade " id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content" style={{height: "40em",width:"40em" }}>
@@ -13,7 +14,7 @@ export default function Signinform() {
                 type="email"
                 className="form-control my-2"
                 placeholder="Type your username"
-              />
+                />
             </div>
             <div className="mb-3 mx-5 my-5 text-light fw-bold">
               <label>Password</label>
@@ -21,7 +22,7 @@ export default function Signinform() {
                 type="password"
                 className="form-control my-2"
                 placeholder="Type your password"
-              />
+                />
             </div>
             <p className="forgot-password text-end mx-5" >
               <a href="/" className="text-light" style={{ textDecoration: 'none' }}> Forgot password?</a>
@@ -39,6 +40,7 @@ export default function Signinform() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

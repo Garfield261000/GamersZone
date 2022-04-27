@@ -14,19 +14,18 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const [showSearch,setshowSearch]=useState(false);
   const [data,setdata]=useState(Games);
 
   return(
     <>
       <Router>
-        <Navbar showSearch={showSearch} setshowSearch={setshowSearch} setdata={setdata}/>
+        <Navbar setdata={setdata}/>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/latestgames" element={<Latestgames data={data}/>}></Route>
-          <Route path="/contact" element={<Contactus />}></Route>
-          <Route path="/signup" element={<Signinform />}></Route>
+          <Route  path="/" element={<Home/>}></Route>
+          <Route exact path="/latestgames" element={<Latestgames data={data}/>}></Route>
+          <Route exact path="/contact" element={<Contactus />}></Route>
         </Routes>
+        <Signinform/>
       </Router>
     </>
   );
