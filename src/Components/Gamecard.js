@@ -9,7 +9,6 @@ export default function Gamecard(props) {
                     <h5 className="card-title text-center text-light fs-3">{props.Gamename}</h5>
                     <p className="card-text text-center text-light fs-4">Rating: {props.Rating}</p>
                     <p className="card-text text-light fs-5">Genres: {props.Genre}</p>
-
                 </div>
             </div>
         </div>
