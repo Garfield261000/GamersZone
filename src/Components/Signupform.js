@@ -1,19 +1,27 @@
 import React from 'react'
 
-export default function Signinform() {
+export default function Signupform() {
   return (
     <>
-    <div className="modal fade " id="exampleModal1" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div className="modal fade " id="exampleModal2" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content" style={{height: "40em",width:"40em" }}>
           <form className='my-5' >
-            <h3 className='text-center text-light fw-bold'>Login</h3>
+            <h3 className='text-center text-light fw-bold'>Signup</h3>
             <div className="mb-3 mx-5 my-5 text-light fw-bold" >
               <label>Username</label>
               <input
                 type="email"
                 className="form-control my-2"
-                placeholder="Type your username"
+                placeholder="Type username"
+                />
+            </div>
+            <div className="mb-3 mx-5 my-5 text-light fw-bold" >
+              <label>Email</label>
+              <input
+                type="email"
+                className="form-control my-2"
+                placeholder="Type email"
                 />
             </div>
             <div className="mb-3 mx-5 my-5 text-light fw-bold">
@@ -21,20 +29,13 @@ export default function Signinform() {
               <input
                 type="password"
                 className="form-control my-2"
-                placeholder="Type your password"
+                placeholder="Set your password"
                 />
             </div>
-            <p className="forgot-password text-end mx-5" >
-              <a href="/" className="text-light" style={{ textDecoration: 'none' }}> Forgot password?</a>
-            </p>
             <div className="d-grid justify-content-center">
               <button type="submit" className="btn btn-danger rounded-pill my-4" style={{ width: "20em" }} >
-                Login
+                Signup
               </button>
-            </div>
-            <div className="d-grid justify-content-center my-5 text-light ">
-                <span >Or Sign Up Using</span>
-                <a href="/" className='text-center text-danger' data-bs-toggle="modal" data-bs-target="#exampleModal2" style={{ textDecoration: 'none' }}>SIGN UP</a>
             </div>
           </form>
         </div>
@@ -43,4 +44,3 @@ export default function Signinform() {
     </>
   )
 }
-

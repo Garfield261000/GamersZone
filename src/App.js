@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import Latestgames from './Components/Latestgames';
 import Contactus from './Components/Contactus';
 import Signinform from './Components/Signinform';
+import Signupform from './Components/Signupform';
 import { Games } from './Components/Games';
 
 import {
@@ -21,11 +22,12 @@ function App() {
       <Router>
         <Navbar setdata={setdata}/>
         <Routes>
-          <Route  path="/" element={<Home/>}></Route>
-          <Route exact path="/latestgames" element={<Latestgames data={data}/>}></Route>
-          <Route exact path="/contact" element={<Contactus />}></Route>
+          <Route exact path="/" element={<Home/>}></Route>
+          <Route  path="/latestgames" element={<Latestgames data={data}/>}></Route>
+          <Route  path="/contact" element={<Contactus />}></Route>
         </Routes>
         <Signinform/>
+        <Signupform/>
       </Router>
     </>
   );
